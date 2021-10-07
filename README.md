@@ -20,7 +20,7 @@
 
 ### Monica has 2 lists containing the countries in which Unilever and Nestle sell the products:
 ##### Nestle : "Saudi Arabia", "Oman", "Kuwait", "Egypt", "Jordan", "Sudan"
-##### Unilever : "Saudi Arabia", "Kuwait", "Iraq", "Kuwait", "Yemen", "Emirates"
+##### Unilever : "Saudi Arabia", "Kuwait", "Iraq", "Morocco", "Yemen", "Emirates"
 
 
 ## Using what you've learned during WEEK-1 . Please do the following :
