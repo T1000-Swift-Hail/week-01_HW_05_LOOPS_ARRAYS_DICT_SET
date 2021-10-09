@@ -2,7 +2,7 @@
 
 ### Kate, Dalia & Monica are work associates . They all work at a consultancy company.
 
-### Kate has the products sales  at Nestle :
+### Kate has the products sales  at Nestle : 1 , 4
 
 ##### KitKat : 34,456,432 US Dollars
 ##### Nescafe : 14,106,132 US Dollars
@@ -10,7 +10,7 @@
 ##### Nido : 44,506,003 US Dollars
 
 
-### Dalia has the products sales for Unilever :
+### Dalia has the products sales for Unilever : 2 , 3 , 5 
 
 ##### Lipton : 23,456,000 US Dollars
 ##### Breyers : 1,235,891 US Dollars
