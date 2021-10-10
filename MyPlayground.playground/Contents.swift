@@ -8,7 +8,7 @@ let Dalia = ["Lipton":23456000,"Breyer":1235891,"Hellmanns":17241412,"Marmite":1
 
 var Nestle: Set = ["Saudi Arabia","Oman","Kuwait","Egypt","Jordan","Sudan"]
 
-var Unilever : Set = ["Saudi Arabia","Kuwait","Iraq","Yemen","Emirates"]
+var Unilever: Set = ["Saudi Arabia","Kuwait","Iraq","Yemen","Emirates"]
 
 var cityuni = (Nestle.union(Unilever))
 
@@ -30,13 +30,29 @@ for (key,Value) in Dalia {
 print()
 if (Kate.count==Dalia.count){
     print("companies has same product count")
-    
+
 }
 print()
 
-print("the top seling product on Nestle was  \(Kate.values.max()!) US")
+    let maxSalse = Kate.values.max()
+    if maxSalse != nil {
+        print("the top sales of Nestele was : \(maxSalse!) US")
+    }else{
+        print("Unknown")
+    }
+    
 
-print("the top seling product on Unilever was  \(Dalia.values.max()!) US")
+
+
+print()
+let maxSalseUni = Dalia.values.max()
+if maxSalseUni != nil {
+    print("the top seling product on Unilever was : \(maxSalseUni!) US")
+}else{
+    print("Unknown")
+}
+
+
 
 print()
 print ("all the cities Unilever & Nestle sell their products in:")
@@ -56,10 +72,13 @@ for citysu in citysub{
 
 //### Bonus
 print()
-
-    print("Sort Nestle products from top selling to least selling products.\(Kate.sorted{$0.value > $1.value})")
+    print("Sort Nestle products from top selling to least selling products:")
+for (key,Value) in (Kate.sorted{$0.value > $1.value}){
+    print("\(key),\(Value)")
+    }
 print()
-
-print("Sort Unilever products from top selling to least selling products\(Dalia.sorted{$0.value > $1.value})")
-    
+print("Sort Unilever products from top selling to least selling products:")
+for (key,value) in (Dalia.sorted{$0.value > $1.value}){
+print("\(key),\(value)")
+}
 
