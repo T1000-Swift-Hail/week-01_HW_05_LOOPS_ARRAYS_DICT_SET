@@ -39,8 +39,3 @@
 ### Bonus
 - Sort Nestle products from top selling to least selling products.
 - Sort Unilever products from top selling to least selling products. 
-
-
-
-
-
