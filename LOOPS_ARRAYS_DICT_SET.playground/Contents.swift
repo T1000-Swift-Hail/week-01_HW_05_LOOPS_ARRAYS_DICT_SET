@@ -24,17 +24,15 @@ if Unilever.count > Nestle.count{
 else{
     print("nestle")
 }
+6
+let kate1 = Kate.max {a,b
+    in a.value < b.value}
+print(kate1!)
 
-//let max = Nestle.sorted {(first ,seconed) -> Bool in
-//    return first.value < seconed.value
-//}
-//print("\(max)")
-
-
-//let max = Nnilever.sorted {(first ,seconed) -> Bool in
-//    return first.value < seconed.value
-//}
-//print("\(max)")
+7
+let Dalia1 = Dalia.max {a,b
+    in a.value < b.value}
+print(Dalia1!)
 
 
 var NEC = Nestle.union(Unilever)
@@ -55,4 +53,11 @@ print("subtracting:")
 for cities in UnileverDont{
     print(cities)
 }
+print("Nestle products from top selling to least:")
+let storedkate = Kate.sorted( by: {$0.0 < $1.0})
+print(storedkate)
 
+
+print("Unilever products from top selling to least:")
+let storedDalia = Dalia.sorted(by: {$0.0 < $1.0})
+print(storedDalia)
