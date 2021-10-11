@@ -24,6 +24,8 @@ var AllCountriesSelling = NestleCountries.union(UnileverCountries)
 var BoothCountriesSelling = NestleCountries.intersection(UnileverCountries)
 var recommend = NestleCountries.subtracting(UnileverCountries)
 
+
+
 print("All Countries Selling:")
 for countries in AllCountriesSelling {
     print(countries)
@@ -42,3 +44,30 @@ print("Countries Nestle Selling:")
 for Nestle in recommend {
     print(Nestle)
 }
+
+print()
+
+if ( Nestle.count > Unilever.count) {
+    print(" Nestle has more products")
+}
+else if (Unilever.count < Nestle.count) {
+print("Unilever has more products")
+}
+else {
+    print("products is equal")
+}
+print()
+print("Top selling in Nestle is :")
+let maxedSales = Nestle.max(by: {x , y in
+    y.value > x.value
+})
+    
+
+print(maxedSales ?? 0)
+print()
+print("Top selling in Unilever is :")
+let maxedSales2 = Unilever.max(by: {x , y in
+    y.value > x.value
+})
+print(maxedSales2 ?? 0)
+
