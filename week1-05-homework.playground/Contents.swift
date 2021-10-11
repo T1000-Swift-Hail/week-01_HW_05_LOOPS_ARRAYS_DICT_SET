@@ -30,15 +30,14 @@ else {
 print()
 print("Top selling product from Nestle:")
 
-let NestleMax = Nestle.max {a,b in a.value<b.value}
-
-print (NestleMax!)
+let NestleMax = (Nestle.max(by: {$0.value < $1.value}))
+print (NestleMax?.value ?? 0)
 
 print()
 print("Top selling product from Unilever:")
-let UnileverMax = Unilever.max { a,b in a.value<b.value}
+let UnileverMax = Unilever.max(by: {$0.value < $1.value})
 
-print (UnileverMax!)
+print (UnileverMax?.value ?? 0)
 print()
 let NestleCities: Set = ["Saudi Arabia","Oman","Kuwait", "Egypt","Jordan","Sudan"]
 let UnileverCities: Set = ["Saudi Arabia","Kuwait","Iraq","Kuwait","Yemen","Emirates"]
@@ -70,10 +69,14 @@ print()
 
 print("Nestle products from top to least:")
 let sortedNestle = Nestle.sorted{$0.1>$1.1}
-    print(sortedNestle)
+for (key,value) in sortedNestle {
+    print("\(key),\(value)")
+}
 print()
 
 print("Unilever products from top to least:")
 let sortedUnilever = Unilever.sorted{$0.1>$1.1}
-    print(sortedUnilever)
+for (key,value) in sortedUnilever {
+    print("\(key),\(value)")
+}
 
